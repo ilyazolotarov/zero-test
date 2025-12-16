@@ -12,7 +12,6 @@
     "#/*": "./src/*"
   },
   "dependencies": {
-    "@repo/frontend": "*",
     "@repo/zero": "*",
     "@tailwindcss/vite": "^4.0.6",
     "@tanstack/react-devtools": "^0.7.0",

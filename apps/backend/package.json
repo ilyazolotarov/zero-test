@@ -7,7 +7,6 @@
   "dependencies": {
     "@hono/node-server": "^1.19.7",
     "@repo/database": "*",
-    "@repo/frontend": "*",
     "@repo/zero": "*",
     "hono": "^4.11.0",
     "uuid": "^13.0.0"
