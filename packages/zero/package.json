@@ -1,0 +1,30 @@
+{
+  "name": "@repo/zero",
+  "type": "module",
+  "scripts": {
+    "dev": "zero-cache-dev",
+    "zero:generate": "drizzle-zero generate"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./server": "./src/server.ts",
+    "./react": "./src/react.ts",
+    "./schema": "./zero-schema.gen.ts",
+    "./database": "./src/database.ts",
+    "./queries": "./src/queries.ts",
+    "./mutators": "./src/mutators.ts"
+  },
+  "imports": {
+    "#schema": "./zero-schema.gen.ts"
+  },
+  "dependencies": {
+    "@repo/database": "*",
+    "@repo/frontend": "*",
+    "@rocicorp/zero": "^0.25.2",
+    "uuid": "^13.0.0",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "drizzle-zero": "^0.17.0"
+  }
+}

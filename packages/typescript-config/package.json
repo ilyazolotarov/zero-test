@@ -1,0 +1,7 @@
+{
+  "name": "@repo/typescript-config",
+  "dependencies": {
+    "@repo/frontend": "*",
+    "uuid": "^13.0.0"
+  }
+}

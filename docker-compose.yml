@@ -1,0 +1,10 @@
+services:
+  database:
+    image: timescale/timescaledb-ha:pg18
+    environment:
+      - POSTGRES_PASSWORD=supersecret
+      - POSTGRES_USER=pguser
+      - POSTGRES_DB=postgres
+      - POSTGRES_INITDB_ARGS="-c wal_level=logical"
+    ports:
+      - "5432:5432"

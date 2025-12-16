@@ -1,0 +1,8 @@
+node_modules/
+.turbo/
+dist/
+build/
+zero.db
+zero.db-shm
+zero.db-wal
+zero.db-wal2

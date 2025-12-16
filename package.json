@@ -1,0 +1,23 @@
+{
+  "name": "zero-test-2",
+  "packageManager": "npm@11.7.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "dotenv -- turbo run dev",
+    "db:generate": "turbo run db:generate",
+    "db:migrate": "dotenv -- turbo run db:migrate",
+    "zero:generate": "turbo run zero:generate",
+    "postdb:generate": "turbo run zero:generate",
+    "postinstall": "turbo run zero:generate"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.8",
+    "dotenv-cli": "^11.0.0",
+    "turbo": "^2.6.3",
+    "typescript": "^5.9.3"
+  }
+}
